@@ -16,4 +16,5 @@ before_script:
   - pip install docker-compose
 
 script:
+  - docker-compose -f podman-compose.yml build
   - docker-compose -f podman-compose.yml run --rm app sh -c "python manage.py test && flake8"
