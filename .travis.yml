@@ -9,6 +9,9 @@ branches:
 services:
   - docker
 
+install:
+  - pip --version
+
 before_script: 
   - pip install docker-compose
 
